@@ -8,8 +8,14 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const body = `Name: ${form.name}%0D%0AEmail: ${form.email}%0D%0AMessage: ${form.message}`;
-    window.location.href = `mailto:safurasamreenshaik@gmail.com?subject=Portfolio Contact&body=${body}`;
+    const name = encodeURIComponent(form.name);
+    const email = encodeURIComponent(form.email);
+    const message = encodeURIComponent(form.message);
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+    window.open(
+      `mailto:safurasamreenshaik@gmail.com?subject=Portfolio%20Contact&body=${body}`,
+      "_self"
+    );
   };
 
   return (
