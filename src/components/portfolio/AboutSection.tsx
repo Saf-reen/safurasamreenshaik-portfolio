@@ -40,7 +40,7 @@ const AboutSection = () => (
             with a deep passion for building clean, scalable web applications.
           </p>
           <p>
-            Currently working as a <span className="text-foreground font-medium">Full Stack Developer at Sria Infotech</span>, 
+            Currently working as a <span className="text-foreground font-medium">Developer Trainee at Sria Infotech</span>, 
             I specialize in React.js, Tailwind CSS, and Node.js to create production-ready interfaces 
             that are both beautiful and performant.
           </p>
