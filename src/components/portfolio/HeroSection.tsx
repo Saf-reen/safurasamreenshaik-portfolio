@@ -27,7 +27,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6 font-body"
         >
-          Full Stack Developer
+          Developer Trainee
         </motion.p>
 
         <motion.h1
@@ -61,8 +61,8 @@ const HeroSection = () => {
           <a href="#projects" className="peach-btn">
             View Projects
           </a>
-          <a href="#contact" className="peach-outline-btn">
-            Download Resume
+          <a href="#live-websites" className="peach-outline-btn">
+            Live Websites
           </a>
         </motion.div>
       </div>

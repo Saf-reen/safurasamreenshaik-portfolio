@@ -3,9 +3,9 @@ import CinematicSection from "./CinematicSection";
 import { Star, Rocket, Trophy } from "lucide-react";
 
 const items = [
-  { icon: Star, title: "Star Performer Award", desc: "Recognized for outstanding contributions and consistent delivery" },
-  { icon: Rocket, title: "Production Deployments", desc: "Built and deployed multiple production-ready websites" },
-  { icon: Trophy, title: "Performance Champion", desc: "Improved UI performance and user experience across projects" },
+  { icon: Star, title: "Star Performer Award", desc: "Recognized at Sria Infotech for outstanding contributions and consistent delivery of quality work" },
+  { icon: Rocket, title: "Production Websites", desc: "Successfully built and deployed multiple production-level websites used by real businesses" },
+  { icon: Trophy, title: "Performance Optimizer", desc: "Improved application performance by ~25% and enhanced UI quality across multiple projects" },
 ];
 
 const AchievementsSection = () => (

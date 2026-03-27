@@ -4,22 +4,22 @@ import CinematicSection from "./CinematicSection";
 const projects = [
   {
     title: "NxDesk Ticketing Tool",
-    description: "Built 15+ responsive UI screens with React.js and Tailwind CSS. Improved usability across devices with pixel-perfect implementation.",
+    description: "Built 15+ responsive UI screens with React.js and Tailwind CSS. Improved usability across devices with pixel-perfect, mobile-first implementation.",
     tech: ["React.js", "Tailwind CSS", "REST API"],
   },
   {
     title: "Smart Check UI Components",
-    description: "Created 10+ reusable components reducing development time by ~30%. Established a consistent design system across the platform.",
+    description: "Created 10+ reusable components establishing a consistent design system. Reduced development time by ~30% across the platform.",
     tech: ["React.js", "Component Library", "Tailwind CSS"],
   },
   {
     title: "e-Rental System",
-    description: "A house rental platform that digitized the entire rental process — from listing properties to managing tenant agreements.",
+    description: "A web-based house rental platform focused on UI/UX and efficiency — digitizing the entire rental process from listings to agreements.",
     tech: ["React.js", "Node.js", "MySQL"],
   },
   {
     title: "Fake Social Media Detection",
-    description: "ML-based project detecting fake social media accounts using behavior analysis with Artificial Neural Networks.",
+    description: "ML-based system detecting fake social media accounts using behavior analysis with Artificial Neural Networks for pattern recognition.",
     tech: ["Python", "ANN", "Machine Learning"],
   },
 ];
