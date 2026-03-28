@@ -19,6 +19,7 @@ import WhyHireMe from "@/components/portfolio/WhyHireMe";
 import ContactSection from "@/components/portfolio/ContactSection";
 import Footer from "@/components/portfolio/Footer";
 
+
 const Index = () => (
   <div className="overflow-x-hidden">
     <Navbar />
