@@ -20,29 +20,50 @@ import ContactSection from "@/components/portfolio/ContactSection";
 import Footer from "@/components/portfolio/Footer";
 
 
-const Index = () => (
-  <div className="overflow-x-hidden">
-    <Navbar />
-    <HeroSection />
-    <AboutSection />
-    <SkillsSection />
-    <HowIWork />
-    <FeaturedProject />
-    <ProjectsSection />
-    <ServicesSection />
-    <LiveWebsitesSection />
-    <ClientWorkSection />
-    <GithubSection />
-    <StatsSection />
-    <ExperienceSection />
-    <AchievementsSection />
-    <CertificationsSection />
-    <CaseStudySection />
-    <CurrentlyLearning />
-    <WhyHireMe />
-    <ContactSection />
-    <Footer />
-  </div>
-);
+import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import Loader from "@/components/portfolio/Loader";
+
+const Index = () => {
+  const [loading, setLoading] = useState(true);
+
+  return (
+    <div className="overflow-x-hidden min-h-screen bg-background">
+      <AnimatePresence mode="wait">
+        {loading ? (
+          <Loader key="loader" onFinished={() => setLoading(false)} />
+        ) : (
+          <motion.div
+            key="content"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <Navbar />
+            <HeroSection />
+            <AboutSection />
+            <SkillsSection />
+            <HowIWork />
+            <FeaturedProject />
+            <ProjectsSection />
+            <ServicesSection />
+            <LiveWebsitesSection />
+            <ClientWorkSection />
+            <GithubSection />
+            <StatsSection />
+            <ExperienceSection />
+            <AchievementsSection />
+            <CertificationsSection />
+            <CaseStudySection />
+            <CurrentlyLearning />
+            <WhyHireMe />
+            <ContactSection />
+            <Footer />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
 export default Index;
