@@ -24,20 +24,20 @@
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 18 100% 89%;
+    --accent: 18 90% 80%;
     --accent-foreground: 0 0% 7%;
 
-    --peach: 18 100% 89%;
-    --peach-deep: 15 90% 82%;
-    --peach-light: 20 100% 95%;
-    --peach-glow: 18 100% 89% / 0.4;
+    --peach: 18 90% 80%;
+    --peach-deep: 15 85% 75%;
+    --peach-light: 20 100% 92%;
+    --peach-glow: 18 90% 80% / 0.4;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 18 100% 89%;
+    --ring: 18 90% 80%;
 
     --radius: 0.5rem;
 

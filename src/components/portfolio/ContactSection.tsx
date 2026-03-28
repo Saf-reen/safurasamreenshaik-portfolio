@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import CinematicSection from "./CinematicSection";
-import { Mail } from "lucide-react";
+import { Mail, Linkedin, Twitter } from "lucide-react";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -19,7 +19,7 @@ const ContactSection = () => {
   };
 
   return (
-    <CinematicSection id="contact" className="py-24 md:py-32 px-6">
+    <CinematicSection id="contact" className="py-8 md:py-10 px-6">
       <div className="max-w-2xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,9 +31,9 @@ const ContactSection = () => {
             <Mail size={22} className="text-muted-foreground" />
           </div>
           <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-4 font-body">
-            Get In Touch
+            Feel free to reach out for web development opportunities, freelance projects, or collaboration.
           </p>
-          <h2 className="cinema-heading text-3xl md:text-4xl mb-10">Let's Work Together</h2>
+          <h2 className="cinema-heading text-3xl md:text-4xl mb-10">Contact Full Stack Developer</h2>
         </motion.div>
 
         <motion.form
@@ -42,7 +42,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="space-y-5 text-left"
+          className="space-y-6 text-left"
         >
           <div>
             <label className="text-sm font-body text-muted-foreground mb-1.5 block">Name</label>
@@ -51,8 +51,8 @@ const ContactSection = () => {
               required
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
-              className="w-full px-4 py-3 rounded-md border border-border bg-background font-body text-sm
-                       focus:outline-none focus:ring-2 focus:ring-ring transition-all duration-300"
+              className="w-full px-5 py-4 rounded-xl border border-border bg-background font-body text-sm
+                       focus:outline-none focus:ring-2 focus:ring-ring transition-all duration-300 shadow-sm"
               placeholder="Your name"
             />
           </div>
@@ -63,8 +63,8 @@ const ContactSection = () => {
               required
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
-              className="w-full px-4 py-3 rounded-md border border-border bg-background font-body text-sm
-                       focus:outline-none focus:ring-2 focus:ring-ring transition-all duration-300"
+              className="w-full px-5 py-4 rounded-xl border border-border bg-background font-body text-sm
+                       focus:outline-none focus:ring-2 focus:ring-ring transition-all duration-300 shadow-sm"
               placeholder="your@email.com"
             />
           </div>
@@ -75,12 +75,12 @@ const ContactSection = () => {
               rows={5}
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
-              className="w-full px-4 py-3 rounded-md border border-border bg-background font-body text-sm resize-none
-                       focus:outline-none focus:ring-2 focus:ring-ring transition-all duration-300"
+              className="w-full px-5 py-4 rounded-xl border border-border bg-background font-body text-sm resize-none
+                       focus:outline-none focus:ring-2 focus:ring-ring transition-all duration-300 shadow-sm"
               placeholder="Tell me about your project..."
             />
           </div>
-          <button type="submit" className="peach-btn w-full text-center block">
+          <button type="submit" className="peach-btn w-full text-center block text-sm font-bold uppercase tracking-widest py-5 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
             Send Message
           </button>
         </motion.form>

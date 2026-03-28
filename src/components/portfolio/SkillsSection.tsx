@@ -2,15 +2,15 @@ import { motion } from "framer-motion";
 import CinematicSection from "./CinematicSection";
 
 const categories = [
-  { title: "Frontend", skills: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS", "Bootstrap"] },
-  { title: "Backend", skills: ["Node.js"] },
+  { title: "Frontend Development", skills: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS", "Bootstrap"] },
+  { title: "Backend Development", skills: ["Node.js", "REST APIs"] },
   { title: "Programming", skills: ["Java", "Python", "C"] },
-  { title: "Database", skills: ["MySQL", "MongoDB"] },
-  { title: "Tools", skills: ["Git", "GitHub", "Postman"] },
+  { title: "Database Management", skills: ["MySQL", "MongoDB"] },
+  { title: "Tools & Deployment", skills: ["Git", "GitHub", "Vite", "Postman"] },
 ];
 
 const SkillsSection = () => (
-  <CinematicSection id="skills" className="py-24 md:py-32 px-6 section-dark">
+  <CinematicSection id="skills" className="py-8 md:py-10 px-6 section-dark">
     <div className="max-w-6xl mx-auto">
       <p className="text-sm tracking-[0.2em] uppercase text-primary-foreground/50 mb-4 font-body text-center">
         Skills & Technologies

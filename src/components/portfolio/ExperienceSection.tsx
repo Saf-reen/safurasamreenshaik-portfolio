@@ -21,14 +21,18 @@ const timeline: TimelineItem[] = [
     company: "Sria Infotech",
     period: "Oct 2025 – Present",
     points: [
-      "Developed a Project Tracking Module handling 50+ tasks and milestones",
-      "Improved task visibility and team productivity",
-      "Improved performance by ~25% and fixed responsiveness issues",
-      "Resolved 20+ UI and integration issues across projects",
+      "Developed a <span className='text-foreground font-medium'>Project Tracking & Budgeting System</span> to manage 50+ production tasks and milestones",
+      "Gained on-site client exposure as a <span className='text-foreground font-medium'>Full Stack Developer</span>, gathering requirements and implementing UI (Sai Balaji)",
+      "Implemented responsive features with <span className='text-foreground font-medium'>React.js and Tailwind CSS</span> improving team coordination",
+      "Worked on resource allocation and budgeting concepts in a professional <span className='text-foreground font-medium'>Production Environment</span>",
+      "Enhanced production websites through <span className='text-foreground font-medium'>Performance Optimization</span>, improving load times by ~25%",
+      "Resolved 20+ UI and API integration issues across multiple client projects",
+      "Collaborated directly with team members to ensure scalable and high-quality software delivery",
     ],
     websites: [
       { label: "onfocussoftware.com", url: "https://onfocussoftware.com" },
       { label: "sriainfotech.com", url: "https://sriainfotech.com" },
+      { label: "saibalaji-motion-studio.app", url: "https://saibalaji-motion-studio.vercel.app/" },
     ],
   },
   {
@@ -49,7 +53,7 @@ const timeline: TimelineItem[] = [
 ];
 
 const ExperienceSection = () => (
-  <CinematicSection id="experience" className="py-24 md:py-32 px-6 section-dark">
+  <CinematicSection id="experience" className="py-8 md:py-10 px-6 section-dark">
     <div className="max-w-4xl mx-auto">
       <p className="text-sm tracking-[0.2em] uppercase text-primary-foreground/50 mb-4 font-body text-center">
         Career Journey
@@ -88,7 +92,7 @@ const ExperienceSection = () => (
               {item.points.map((pt) => (
                 <li key={pt} className="text-primary-foreground/70 text-sm font-body flex gap-2">
                   <span className="text-peach mt-0.5 shrink-0">•</span>
-                  {pt}
+                  <span dangerouslySetInnerHTML={{ __html: pt }} />
                 </li>
               ))}
             </ul>

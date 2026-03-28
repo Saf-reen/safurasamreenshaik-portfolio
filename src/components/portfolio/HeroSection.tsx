@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Linkedin, Mail, Twitter } from "lucide-react";
+import profileImg from "@/assets/profile.jpg";
 
 const HeroSection = () => {
-  const fullText = "I build scalable and responsive web applications using modern technologies.";
+  const fullText = "Full Stack Developer specializing in React.js, Tailwind CSS, and Node.js, building scalable and high-performance web applications.";
   const [typed, setTyped] = useState("");
 
   useEffect(() => {
@@ -20,6 +22,26 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center peach-gradient relative overflow-hidden">
+      {/* Profile Photo - Top-Right/Absolute */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="absolute top-10 right-10 z-10 hidden md:block"
+      >
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="w-24 h-24 rounded-full overflow-hidden border-2 border-accent/20 shadow-md hover:shadow-xl hover:shadow-accent/10 transition-shadow duration-500"
+        >
+          <img
+            // src={profileImg}
+            src="/safura_.jpeg"
+            alt="Safura Samreen - Full Stack Developer"
+            className="w-full h-full object-cover grayscale-0 hover:grayscale-0 transition-all duration-700"
+          />
+        </motion.div>
+      </motion.div>
+
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -34,12 +56,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 1, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="cinema-heading text-5xl md:text-7xl lg:text-8xl mb-6"
+          className="cinema-heading text-4xl md:text-6xl lg:text-7xl mb-6"
         >
-          Hi, I'm{" "}
-          <span className="text-peach-deep">Safura</span>
-          <br />
-          Samreen
+          Safura Samreen <span className="text-peach-deep block md:inline">— Full Stack Developer</span>
         </motion.h1>
 
         <motion.p
@@ -65,23 +84,34 @@ const HeroSection = () => {
             Live Websites
           </a>
         </motion.div>
-      </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
-      >
+        {/* Social Links */}
         <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="w-5 h-8 border-2 border-foreground/20 rounded-full flex justify-center pt-1.5"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.8 }}
+          className="flex justify-center gap-6 mt-12"
         >
-          <div className="w-1 h-2 bg-foreground/40 rounded-full" />
+          {[
+            { Icon: Linkedin, href: "https://www.linkedin.com/in/safura-samreen-shaik-7a03a7239/", label: "LinkedIn" },
+            { Icon: Mail, href: "mailto:safurasamreenshaik@gmail.com", label: "Email" },
+            { Icon: Twitter, href: "https://x.com/SafurASamreeNSK", label: "Twitter" },
+          ].map(({ Icon, href, label }) => (
+            <motion.a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              className="text-muted-foreground/60 hover:text-peach transition-colors duration-400 group relative"
+              title={label}
+            >
+              <Icon size={20} />
+              {/* Optional tooltip effect could go here, but title attribute is simpler for now */}
+            </motion.a>
+          ))}
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 };

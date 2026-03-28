@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import CinematicSection from "./CinematicSection";
 
 const CaseStudySection = () => (
-  <CinematicSection className="py-24 md:py-32 px-6">
+  <CinematicSection className="py-8 md:py-10 px-6">
     <div className="max-w-4xl mx-auto">
       <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-4 font-body text-center">
         Deep Dive

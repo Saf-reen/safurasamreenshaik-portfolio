@@ -3,29 +3,34 @@ import CinematicSection from "./CinematicSection";
 
 const projects = [
   {
-    title: "NxDesk Ticketing Tool",
-    description: "Built 15+ responsive UI screens with React.js and Tailwind CSS. Improved usability across devices with pixel-perfect, mobile-first implementation.",
+    title: "Project Management & Budgeting Tool",
+    description: "Built a responsive web application to manage production tasks, milestones, and project budget flow. Implemented scalable UI components with advanced data tracking and real-time visibility.",
+    tech: ["React.js", "Tailwind CSS", "MySQL"],
+  },
+  {
+    title: "NxDesk Product Suite",
+    description: "Developed 15+ responsive UI screens and cross-platform layouts as a Full Stack Project. Integrated scalable React components with seamless API connectivity for production systems.",
     tech: ["React.js", "Tailwind CSS", "REST API"],
   },
   {
-    title: "Smart Check UI Components",
-    description: "Created 10+ reusable components establishing a consistent design system. Reduced development time by ~30% across the platform.",
+    title: "Smart Check Design System",
+    description: "Architected a modular component library for enterprise-level scalability. Focused on performance optimization and reusable UI patterns to reduce development cycles.",
     tech: ["React.js", "Component Library", "Tailwind CSS"],
   },
   {
-    title: "e-Rental System",
-    description: "A web-based house rental platform focused on UI/UX and efficiency — digitizing the entire rental process from listings to agreements.",
-    tech: ["React.js", "Node.js", "MySQL"],
+    title: "e-Rental Marketplace",
+    description: "Built a comprehensive full stack house rental platform digitizing property listing and discovery. Integrated secure database management with a responsive mobile-first UI.",
+    tech: ["React.js", "MySQL", "Node.js"],
   },
   {
-    title: "Fake Social Media Detection",
-    description: "ML-based system detecting fake social media accounts using behavior analysis with Artificial Neural Networks for pattern recognition.",
-    tech: ["Python", "ANN", "Machine Learning"],
+    title: "Account Detection System",
+    description: "AI-based platform for detecting fraudulent social media presence using Machine Learning and pattern recognition algorithms.",
+    tech: ["Python", "ANN", "ML"],
   },
 ];
 
 const ProjectsSection = () => (
-  <CinematicSection id="projects" className="py-24 md:py-32 px-6">
+  <CinematicSection id="projects" className="py-8 md:py-10 px-6">
     <div className="max-w-6xl mx-auto">
       <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-4 font-body text-center">
         Selected Work
