@@ -4,9 +4,9 @@ const Footer = () => (
   <footer className="py-8 px-6 border-t border-border/50 text-center bg-background">
     <div className="flex justify-center gap-6 mb-8">
       {[
-        { Icon: Linkedin, href: "https://linkedin.com/in/your-profile", label: "LinkedIn" },
+        { Icon: Linkedin, href: "https://www.linkedin.com/in/safura-samreen-shaik-7a03a7239/", label: "LinkedIn" },
         { Icon: Mail, href: "mailto:safurasamreenshaik@gmail.com", label: "Email" },
-        { Icon: Twitter, href: "https://twitter.com/your-handle", label: "Twitter" },
+        { Icon: Twitter, href: "https://x.com/SafurASamreeNSK", label: "Twitter" },
       ].map(({ Icon, href, label }) => (
         <a
           key={label}
